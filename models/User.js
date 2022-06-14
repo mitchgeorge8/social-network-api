@@ -43,11 +43,6 @@ UserSchema.virtual("friendCount").get(function () {
   return this.friends.length;
 });
 
-UserSchema.pre("findOneAndDelete", function (next) {
-  Thought.deleteMany({ username: this.username }).exec();
-  next();
-});
-
 const User = model("User", UserSchema);
 
 module.exports = User;
