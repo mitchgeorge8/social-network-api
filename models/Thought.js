@@ -1,5 +1,4 @@
 const { Schema, model, Types } = require("mongoose");
-// const dateFormat = import("dateformat");
 
 const ReactionSchema = new Schema(
   {
@@ -19,7 +18,7 @@ const ReactionSchema = new Schema(
     createdAt: {
       type: Date,
       default: Date.now,
-      // get: (createdAtVal) => dateFormat(createdAtVal, "shortDate"),
+      get: (createdAtVal) => createdAtVal.toLocaleDateString(),
     },
   },
   {
@@ -42,7 +41,7 @@ const ThoughtSchema = new Schema(
     createdAt: {
       type: Date,
       default: Date.now,
-      // get: (createdAtVal) => dateFormat(createdAtVal, "shortDate"),
+      get: (createdAtVal) => createdAtVal.toLocaleString(),
     },
     username: {
       type: String,
