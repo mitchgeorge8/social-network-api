@@ -52,7 +52,7 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
 Using [Insomnia](https://insomnia.rest/), you can now perform all necessary CRUD operations for a social network. Navigate to http://localhost:3001/api/users to get started. Using two main schemas, User and Thought, this is a fully functional back end api for a social networking platform.
 
-[Walkthrough Video]()
+[Walkthrough Video](https://drive.google.com/file/d/1Iqmi--AvM_biHFUDWCWHpAO1ekwPTgCd/view)
 
 Screenshot:
 
